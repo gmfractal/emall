@@ -1,0 +1,22 @@
+<body>
+    
+    <header class="header">
+        <h1 class="logo"><a href="/">eMall Store</a></h1>
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/products">Products</a></li>
+                <li class="nav-item"><a href="/reviewOrder">Review Order</a></li>
+                <% if (authenticated === true) { %>
+                    
+                    <li class="nav-item"><a href="/logout">Logout</a></li>                    
+                
+                <% } else { %>     
+
+                <li class="nav-item"><a href="/login">Login</a></li>
+                
+                <% } %> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
